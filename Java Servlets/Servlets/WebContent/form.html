@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Feedback Form</title>
+</head>
+<body>
+	<a href="home"><button>Home</button></a>
+	<br>
+	<br>
+	
+	<form method="post" action="display_form">
+		<label>Enter Register Number: </label> <input required name="roll_no" type="text" /><br/>
+		<label>Enter Student name : </label> <input required name="name" type="text" /><br/>
+		<label>Enter Course name : </label> <input required name="course" type="text" /><br/>
+		<label>Enter Branch name : </label> <input required name="branch" type="text" /><br/>
+		<label>Enter Course code:</label> <input required name="code" type="text" /><br/>
+		<label>Enter Batch name:</label>
+		<input name="batch" value="N" required  type="radio" /> <label>N</label>
+		<input name="batch" value="P" required  type="radio" /> <label>P</label>
+		<input name="batch" value="Q" required type="radio" /> <label>Q</label>
+		<br>
+		<label>Was the course useful to gain knowledge about Java?</label>
+		<input name="java" required value="Low" type="radio" /> <label>Low</label>
+		<input name="java" required  value="Medium" type="radio" /> <label>Mid</label>
+		<input name="java" required  value="High" type="radio" /> <label>High</label>
+		<br>
+		<label>Was four hours sufficient for the lab session?</label>
+		<input name="lab_hours" required value="Low" type="radio" /> <label>Low</label>
+		<input name="lab_hours" required  value="Medium" type="radio" /> <label>Mid</label>
+		<input name="lab_hours" required value="High" type="radio" /> <label>High</label>
+		<br>
+		<label>Is it a core course?</label>
+		<input name="core" required  value="Yes" type="radio" /> <label>Yes</label>
+		<input name="core" required  value="No" type="radio" /> <label>No</label>
+		<br>
+		<input type="submit" value="Submit"/> 
+	</form>
+</body>
+</html>
